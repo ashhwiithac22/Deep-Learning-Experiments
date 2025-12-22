@@ -58,6 +58,54 @@ pip install opencv-python matplotlib numpy google-colab
 - Open DL_Ex3.ipynb in Google Colab.
 - Upload one or two images when prompted.
 - View blended results and subtraction-based difference detection.
-
-
 --- 
+
+# Experiment 4 – Data Augmentation & CNN Training 🧠🖼️
+
+- A Python-based experiment that demonstrates data augmentation techniques to improve image classification performance.
+- Uses PyTorch and Torchvision to train a Convolutional Neural Network (CNN) on the CIFAR-10 dataset.
+- Compares model performance with and without data augmentation using accuracy curves.
+
+## Objective
+
+- To understand how data augmentation helps a deep learning model generalize better.
+- To apply multiple augmentation techniques and observe their impact on CNN training accuracy.
+
+## Augmentation Techniques Used
+
+- Rotation – Rotates images randomly
+- Translation – Shifts images horizontally and vertically
+- Scaling – Zooms images in and out
+- Image Addition – Increases brightness
+- Image Subtraction – Enhances edges using Gaussian blur subtraction
+
+## Features
+
+- Train CNN without augmentation (original images only)
+- Train CNN with augmentation (modified images)
+- Plot and compare accuracy curves
+- Automatic dataset download (CIFAR-10)
+
+## Dataset
+
+- CIFAR-10
+- 60,000 color images
+- Image size: 32 × 32
+- 10 classes (airplane, car, bird, cat, deer, dog, frog, horse, ship, truck)
+- 50,000 training images, 10,000 testing images
+
+
+
+## Observe:
+
+- Training accuracy without augmentation
+- Training accuracy with augmentation
+- Accuracy comparison graph
+
+
+## Conclusion
+
+- Models trained with data augmentation learn more robust features.
+- Augmentation improves generalization and reduces overfitting.
+- Accuracy curves clearly show the difference in learning behavior.
+---
