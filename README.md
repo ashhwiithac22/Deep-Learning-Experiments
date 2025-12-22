@@ -109,3 +109,33 @@ pip install opencv-python matplotlib numpy google-colab
 - Augmentation improves generalization and reduces overfitting.
 - Accuracy curves clearly show the difference in learning behavior.
 ---
+# Experiment 5 – Histogram Operations 📊
+
+## Features
+
+- Grayscale Histogram Equalization
+- Improves the contrast of a grayscale image.
+- Makes dark or bright images more balanced.
+- Color Histogram Equalization
+- Applies histogram equalization on RGB channels individually.
+- Applies histogram equalization on HSV color space (enhancing brightness without changing colors).
+- Histogram Matching (Specification)
+- Adjusts one image to match the brightness/contrast of a reference image.
+- CLAHE (Contrast Limited Adaptive Histogram Equalization)
+- Enhances contrast locally in small image regions.
+- Prevents over-amplification of noise (better than global histogram equalization).
+
+## Output
+
+- Original Grayscale Image
+- Grayscale Histogram Equalized Image
+- CLAHE Grayscale Image
+- Original Color Image
+- RGB Histogram Equalized Image
+- HSV Histogram Equalized Image
+- Reference Image (for histogram matching)
+- Histogram Matched Image
+
+---
+
+
