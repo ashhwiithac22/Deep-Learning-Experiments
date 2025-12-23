@@ -138,4 +138,60 @@ pip install opencv-python matplotlib numpy google-colab
 
 ---
 
+# Experiment 6 – Effect of Histogram Equalization on CNN Classification 🧠🖼️
+
+- A deep learning experiment implemented using **PyTorch** to study the impact of **Histogram Equalization** on image classification.
+- A **Simple Convolutional Neural Network (CNN)** is trained on the **CIFAR-10 dataset**.
+- Model performance is compared **with and without histogram equalization**.
+- This experiment helps understand the importance of **image preprocessing** in deep learning.
+
+
+## Features
+
+- **Training Without Histogram Equalization**
+  - Images are converted to grayscale.
+  - Pixel values are normalized.
+  - No contrast enhancement is applied.
+
+- **Training With Histogram Equalization**
+  - Images are converted to grayscale.
+  - Histogram equalization is applied to improve image contrast.
+  - Pixel values are normalized before training.
+
+- **CNN-Based Image Classification**
+  - Uses a simple CNN architecture with convolution, pooling, and fully connected layers.
+  - Trained using Cross-Entropy loss and Adam optimizer.
+
+- **Accuracy Comparison**
+  - Model accuracy is calculated for both cases.
+  - Results are compared to analyze the effect of histogram equalization.
+
+## Dataset
+
+- **CIFAR-10 Dataset**
+  - 60,000 images (32×32 pixels)
+  - 10 different object classes
+  - Dataset is automatically downloaded using torchvision
+
+## Usage
+
+- Open the notebook
+- The CIFAR-10 dataset is downloaded automatically.
+- The model is trained:
+  - Once without histogram equalization
+  - Once with histogram equalization
+- Accuracy for both cases is printed.
+- Compare the results to observe performance differences.
+
+## Output
+
+- Accuracy without Histogram Equalization
+- Accuracy with Histogram Equalization
+- Comparison shows how contrast enhancement affects CNN performance.
+
+## Conclusion
+Histogram equalization can improve or degrade performance depending on the dataset and model.
+
+--- 
+
 
