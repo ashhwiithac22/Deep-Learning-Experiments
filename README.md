@@ -189,9 +189,167 @@ pip install opencv-python matplotlib numpy google-colab
 - Accuracy with Histogram Equalization
 - Comparison shows how contrast enhancement affects CNN performance.
 
+  
 ## Conclusion
 Histogram equalization can improve or degrade performance depending on the dataset and model.
 
---- 
+---
+# Experiment 7 – Edge Detection Using Sobel Operator 🖼️📐
+
+An image processing experiment implemented using **Python and OpenCV** to analyze **edge detection** using the **Sobel operator**.  
+This experiment studies the effect of **kernel size variation (3×3 vs 5×5)** and **image smoothing** on edge detection performance.
+
+
+## Objective
+
+- To detect edges using the Sobel operator
+- To analyze the effect of kernel size (3×3 and 5×5)
+- To study edge detection before and after image smoothing
+- To understand the importance of preprocessing in image enhancement
+
+
+## Features
+
+### Grayscale Conversion
+- Converts the input image to grayscale
+- Reduces complexity by removing color information
+
+### Sobel Edge Detection (3×3 Kernel)
+- Detects fine and thin edges
+- More sensitive to noise
+- Captures detailed edge information
+
+### Sobel Edge Detection (5×5 Kernel)
+- Produces thicker and smoother edges
+- Less sensitive to noise
+- Suitable for strong edge detection
+
+### Gaussian Image Smoothing
+- Reduces noise using Gaussian Blur
+- Minimizes false edges
+
+### Edge Detection After Smoothing
+- Applies Sobel operator on smoothed image
+- Produces clearer and more continuous edges
+
+### Visualization
+- Displays all outputs using Matplotlib subplots for easy comparison
+
+
+## Input
+
+- Any standard image (JPG / PNG)
+- Image is uploaded manually (Google Colab) or loaded locally
+- Image is converted to grayscale before processing
+
+## Usage
+
+- Open the Python notebook or script
+- Upload the input image
+- The program performs:
+  - Sobel edge detection using 3×3 kernel
+  - Sobel edge detection using 5×5 kernel
+  - Gaussian smoothing
+  - Sobel edge detection after smoothing
+- Outputs are displayed for comparison
+
+## Output
+
+- Original grayscale image
+- Sobel edge detection (3×3 kernel)
+- Sobel edge detection (5×5 kernel)
+- Smoothed (Gaussian blurred) image
+- Sobel edge detection after smoothing
+
+## Observations
+
+- 3×3 kernel detects fine edges but is sensitive to noise
+- 5×5 kernel produces smoother and thicker edges
+- Smoothing improves edge continuity and reduces false edges
+
+## Conclusion
+
+This experiment demonstrates that kernel size and preprocessing significantly affect edge detection.  
+Applying Gaussian smoothing before Sobel edge detection improves edge clarity and continuity, making it more suitable for image enhancement tasks.
+
+---
+# Experiment 8– Laplacian and Laplacian of Gaussian (LoG) Edge Detection 🖼️📐
+
+An image processing experiment implemented using **Python and OpenCV** to analyze **edge detection** using the **Laplacian operator** and **Laplacian of Gaussian (LoG)**.  
+The experiment compares edge detection results **with and without Gaussian smoothing** to study noise reduction and edge continuity.
+
+---
+
+## Objective
+
+- To perform edge detection using the Laplacian operator
+- To study the effect of noise on Laplacian edge detection
+- To apply Gaussian smoothing before Laplacian
+- To analyze the improvement using Laplacian of Gaussian (LoG)
+
+---
+
+## Features
+
+### Grayscale Conversion
+- Converts the input image to grayscale
+- Simplifies processing by using intensity values only
+
+### Laplacian Edge Detection
+- Detects edges in all directions
+- Sensitive to noise
+
+### Gaussian Image Smoothing
+- Applies Gaussian blur to reduce noise
+- Prevents false edge detection
+
+### Laplacian of Gaussian (LoG)
+- Combines Gaussian smoothing and Laplacian edge detection
+- Produces smoother and more continuous edges
+- Reduces noise effects
+
+### Visualization
+- Displays results using Matplotlib subplots for comparison
+
+## Input
+
+- Any standard image (JPG / PNG)
+- Image is uploaded manually (Google Colab) or loaded locally
+- Converted to grayscale before processing
+
+## Usage
+
+- Open the Python notebook or script
+- Upload the input image
+- The program performs:
+  - Grayscale conversion
+  - Laplacian edge detection
+  - Gaussian smoothing
+  - Laplacian of Gaussian (LoG)
+- Outputs are displayed for visual comparison
+
+
+## Output
+
+- Original grayscale image
+- Edge detection using Laplacian
+- Gaussian smoothed image
+- Edge detection using Laplacian of Gaussian (LoG)
+
+
+## Observations
+
+- Laplacian detects sharp edges but is highly sensitive to noise
+- Gaussian smoothing reduces noise in the image
+- LoG produces clearer, smoother, and more continuous edges
+- LoG performs better than plain Laplacian for noisy images
+
+
+## Conclusion
+
+This experiment shows that applying Gaussian smoothing before Laplacian edge detection significantly improves edge quality.  
+Laplacian of Gaussian (LoG) is more effective than Laplacian alone due to reduced noise sensitivity and better edge continuity.
+
+---
 
 
