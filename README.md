@@ -348,7 +348,7 @@ Laplacian of Gaussian (LoG) is more effective than Laplacian alone due to reduce
 
 ---
 
-# Experiment 9 – Multi-Layer Neural Network (MLNN) From Scratch 🧠📉
+# Experiment 9 – Multi-Layer Neural Network (MLNN)🧠
 
 A Python-based experiment that implements a Multi-Layer Neural Network (MLNN) from scratch without using any inbuilt machine learning or deep learning libraries.
 The experiment demonstrates forward propagation, backpropagation, loss calculation, weight updates, and decision boundary visualization using a simple binary classification problem (XOR dataset).
