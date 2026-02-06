@@ -278,16 +278,12 @@ Applying Gaussian smoothing before Sobel edge detection improves edge clarity an
 An image processing experiment implemented using **Python and OpenCV** to analyze **edge detection** using the **Laplacian operator** and **Laplacian of Gaussian (LoG)**.  
 The experiment compares edge detection results **with and without Gaussian smoothing** to study noise reduction and edge continuity.
 
----
-
 ## Objective
 
 - To perform edge detection using the Laplacian operator
 - To study the effect of noise on Laplacian edge detection
 - To apply Gaussian smoothing before Laplacian
 - To analyze the improvement using Laplacian of Gaussian (LoG)
-
----
 
 ## Features
 
@@ -351,5 +347,51 @@ This experiment shows that applying Gaussian smoothing before Laplacian edge det
 Laplacian of Gaussian (LoG) is more effective than Laplacian alone due to reduced noise sensitivity and better edge continuity.
 
 ---
+
+# Experiment 9 – Multi-Layer Neural Network (MLNN) From Scratch 🧠📉
+
+A Python-based experiment that implements a Multi-Layer Neural Network (MLNN) from scratch without using any inbuilt machine learning or deep learning libraries.
+The experiment demonstrates forward propagation, backpropagation, loss calculation, weight updates, and decision boundary visualization using a simple binary classification problem (XOR dataset).
+
+## Objective
+
+- To understand the working of a Multi-Layer Neural Network
+- To implement forward propagation manually
+- To implement backward propagation manually
+- To study the effect of epochs on loss reduction
+- To visualize the decision boundary / clustering diagram
+- To analyze how a neural network learns a non-linear problem (XOR)
+
+## Network Architecture
+
+- Input Layer: 2 neurons (X₁, X₂)
+- Hidden Layer: 2 neurons
+- Activation Function: ReLU
+- Output Layer: 1 neuron
+- Activation Function: Sigmoid
+
+## Dataset
+
+- XOR Dataset
+
+Input:
+- (0, 0) → 0
+- (0, 1) → 1
+- (1, 0) → 1
+- (1, 1) → 0
+
+## Hyperparameters
+- Learning Rate: 0.1
+- Epochs: 1000
+- Activation Functions:
+  - ReLU (Hidden Layer)
+  - Sigmoid (Output Layer
+
+## Observations
+
+- Loss decreases gradually as epochs increase
+- The network successfully learns a non-linear decision boundary
+- ReLU helps the network learn complex patterns
+- Sigmoid produces probability-based output suitable for binary classification
 
 
