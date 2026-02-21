@@ -394,4 +394,58 @@ Input:
 - ReLU helps the network learn complex patterns
 - Sigmoid produces probability-based output suitable for binary classification
 
+--- 
+# Experiment 10 – Multi-Layer Perceptron (MLP) on MNIST 🧠
+
+A Python-based experiment that implements a Multi-Layer Perceptron (MLP) using PyTorch to classify handwritten digits from the MNIST dataset.
+The experiment demonstrates dataset loading, neural network training, loss calculation, optimization, accuracy evaluation, and prediction visualization.
+
+## Objective
+
+- To understand image classification using neural networks
+- To implement an MLP using PyTorch
+- To train the model on the MNIST handwritten digit dataset
+- To evaluate model performance using accuracy
+- To visualize predicted vs true labels
+- To understand how neural networks learn from image data
+
+## Network Architecture
+
+- Input Layer: 784 neurons (28 × 28 pixels)
+- Hidden Layer: 128 neurons
+- Activation Function: ReLU
+- Output Layer: 10 neurons (digits 0–9)
+- Loss Function: CrossEntropyLoss
+- Optimizer: Adam
+
+## Dataset
+
+- MNIST Handwritten Digit Dataset
+### Input:
+
+- 28 × 28 grayscale images of digits (0–9)
+
+### Output:
+
+- Predicted digit class (0–9)
+
+### Hyperparameters
+
+- Learning Rate: 0.001
+- Batch Size: 64
+- Epochs: 10
+
+#### Activation Function:
+
+- ReLU (Hidden Layer)
+
+### Observations
+
+- Training loss decreases over epochs
+- The model learns meaningful digit features
+- Accuracy improves with training
+- The network successfully classifies handwritten digits
+- Visualization confirms predicted labels closely match true labels
+
+---
 
