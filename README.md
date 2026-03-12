@@ -448,4 +448,68 @@ The experiment demonstrates dataset loading, neural network training, loss calcu
 - Visualization confirms predicted labels closely match true labels
 
 ---
+# Experiment 11 – Convolutional Neural Network (CNN) for Flower Classification 🌸
 
+A Python-based experiment that implements a Convolutional Neural Network (CNN) using TensorFlow to classify different types of flowers.
+The experiment demonstrates image preprocessing, CNN training, feature extraction, accuracy evaluation, and prediction of uploaded flower images.
+
+## Objective
+- To understand image classification using Convolutional Neural Networks
+- To implement a CNN using TensorFlow/Keras
+- To train the model on the flower image dataset
+- To evaluate model performance using accuracy
+- To predict the class of an uploaded flower image
+
+## Network Architecture
+
+- Input Layer: 180 × 180 × 3 RGB image
+- Convolution Layer 1: 32 filters (3×3) + ReLU
+- MaxPooling Layer
+- Convolution Layer 2: 64 filters (3×3) + ReLU
+- MaxPooling Layer
+- Convolution Layer 3: 128 filters (3×3) + ReLU
+- MaxPooling Layer
+- Flatten Layer
+- Dense Layer)
+- Output Layer: Softmax
+
+## Dataset
+- TensorFlow Flower Photos Dataset
+  
+---
+# Experiment 12 – Sentiment Analysis using Recurrent Neural Network (RNN) 💬
+
+A Python-based experiment that implements a Recurrent Neural Network (RNN) using TensorFlow to perform sentiment analysis on movie reviews.
+The experiment demonstrates text preprocessing, sequence padding, RNN training, performance evaluation, and sentiment prediction.
+
+## Objective
+
+- To understand sentiment analysis using neural networks
+- To implement an RNN model for text classification
+- To train the model on a movie review dataset
+- To evaluate model performance using accuracy
+- To predict sentiment for new input reviews
+
+## Network Architecture
+
+- Input Layer: Text sequences (padded reviews)
+- Embedding Layer: Word representation
+- RNN Layer: LSTM (64 units)
+- Output Layer: Dense layer with Sigmoid activation
+
+## Dataset
+
+- IMDB Large Movie Review Dataset
+
+## Sentiment classification:
+
+- Positive
+- Negative
+
+## Observations
+
+- The RNN learns patterns in text sequences
+- Training accuracy improves with each epoch
+- The model successfully classifies movie reviews
+- Predictions correctly identify positive and negative sentiments
+---
