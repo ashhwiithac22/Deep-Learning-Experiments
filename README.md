@@ -513,3 +513,32 @@ The experiment demonstrates text preprocessing, sequence padding, RNN training, 
 - The model successfully classifies movie reviews
 - Predictions correctly identify positive and negative sentiments
 ---
+
+# Experiment 13 – Long Short-Term Memory (LSTM) for Time Series Analysis 📈🧠
+A Python-based experiment that implements a Long Short-Term Memory (LSTM) network using TensorFlow to perform time series prediction on real-world data.
+The experiment demonstrates sequence creation, data normalization, LSTM training, performance evaluation using RMSE, and prediction of future values based on user input.
+
+## Objective
+- To understand time series forecasting using LSTM
+- To train the model on real-time sequential data
+- To evaluate model performance using RMSE and accuracy
+- To predict future values based on previous inputs
+
+## Network Architecture
+- Input Layer: Time steps (previous 3 values)
+   LSTM Layer: 50 units
+- Output Layer: Dense layer (1 neuron)
+- Loss Function: Mean Squared Error (MSE)
+- Optimizer: Adam
+
+## Dataset
+Airline Passengers Dataset
+#### Input:
+Monthly passenger values (time series data)
+#### Output:
+Predicted next passenger value
+
+## Conclusion
+
+This experiment demonstrates how LSTM networks can effectively model time-dependent data. The model learns patterns from previous values and predicts future values with reasonable accuracy. LSTM is highly suitable for time series forecasting problems such as sales prediction, stock prices, and traffic analysis.
+
